@@ -1,0 +1,22 @@
+@import '../typography';
+@import '../palette';
+@import '../layout';
+
+.card {
+  background-color: $lightGreyColor;
+  border-radius: $borderRadius;
+}
+
+.simpleCard {
+  padding-top: $spacer-1;
+}
+
+.cardImage {
+  border-top-left-radius: $borderRadius;
+  border-top-right-radius: $borderRadius;
+  width: 100%;
+}
+
+.cardBody {
+  padding: 0 $spacer-3 $spacer-2 $spacer-3;
+}

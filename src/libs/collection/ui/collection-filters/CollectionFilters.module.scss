@@ -1,0 +1,17 @@
+@import '../../../design-system/typography';
+@import '../../../design-system/palette';
+@import '../../../design-system/layout';
+
+.collectionFilters {
+  text-align: right;
+  padding: $spacer-1;
+  margin-bottom: $spacer-1;
+}
+
+.categoryFilter {
+  height: 35px;
+  border: 1px solid $lightGreyColor;
+  border-radius: $smallBorderRadius;
+  padding: $spacer-05;
+  margin-left: $spacer-1;
+}

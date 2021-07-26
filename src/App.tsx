@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from 'react';
+import Loader from 'src/libs/design-system/loader';
+import ErrorMessage from 'src/libs/design-system/error-message';
+import { ErrorBoundary } from './libs/core/exceptions';
+import { Layout } from './libs/layout/ui';
 
-function App() {
+const CollectionContainer = React.lazy(
+  () => import('./libs/collection/shell/CollectionContainer')
+);
+
+function App(): JSX.Element {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Suspense fallback={<Loader />}>
+        <ErrorBoundary fallback={ErrorMessage}>
+          <CollectionContainer />
+        </ErrorBoundary>
+      </Suspense>
+    </Layout>
   );
 }
 

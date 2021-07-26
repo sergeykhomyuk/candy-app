@@ -1,0 +1,49 @@
+@import '../../../design-system/typography';
+@import '../../../design-system/palette';
+@import '../../../design-system/layout';
+
+$cardWidth: 248px;
+$avatarSize: 18px;
+
+.card {
+  width: $cardWidth;
+}
+
+.title {
+  font-size: $largeFontSize;
+  font-weight: $boldFontWeight;
+}
+
+.details {
+  display: flex;
+  color: $greyColor;
+  align-items: center;
+}
+
+.ownerAvatar {
+  width: $avatarSize;
+  height: $avatarSize;
+  margin-right: $spacer-1;
+}
+
+.ownerName {
+  color: $greyColor;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.counters {
+  font-size: $smallFontSize;
+  flex-shrink: 0;
+  padding-left: $spacer-1;
+  margin-left: auto;
+
+  &> *:not(:last-child) {
+    margin-right: $spacer-1;
+  }
+}
+
+.counterIcon {
+  color: $greyColor;
+}

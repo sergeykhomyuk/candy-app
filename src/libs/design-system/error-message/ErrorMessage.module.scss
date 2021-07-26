@@ -1,0 +1,21 @@
+@import '../typography';
+@import '../palette';
+@import '../layout';
+
+$iconSize: 128px;
+
+.errorMessage {
+  text-align: center;
+}
+
+.icon {
+  height: 128px;
+  width: 128px;
+  margin-bottom: $spacer-1;
+  color: $redColor;
+}
+
+.message {
+  color: $greyColor;
+  font-size: $extraLargeFontSize;
+}

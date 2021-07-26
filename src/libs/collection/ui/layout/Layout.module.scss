@@ -1,0 +1,17 @@
+@import '../../../design-system/typography';
+@import '../../../design-system/palette';
+@import '../../../design-system/layout';
+
+.header {
+  max-width: 650px;
+}
+
+.title {
+  font-size: $extraLargeFontSize;
+  font-weight: $boldFontWeight;
+  margin-bottom: $spacer-1;
+}
+
+.subTitle {
+  color: $greyColor;
+}

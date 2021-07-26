@@ -1,0 +1,11 @@
+@import '../palette';
+@import '../layout';
+
+.counter {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.value {
+  margin-left: $spacer-05;
+}

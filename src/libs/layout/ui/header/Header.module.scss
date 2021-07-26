@@ -1,0 +1,42 @@
+@import '../../../design-system/palette';
+@import '../../../design-system/layout';
+
+$avatarSize: 24px;
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: $whiteColor;
+  display: flex;
+  justify-content: space-between;
+  z-index: $raisedZIndex;
+  color: $greyColor;
+  padding: $spacer-3 $spacer-2;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: $avatarSize;
+  height: $avatarSize;
+}
+
+.users {
+  display: flex;
+  align-items: center;
+
+  margin: 0 $spacer-5;
+
+  > *:not(:last-child) {
+    margin-right: $spacer-1;
+  }
+}
+
+.moreActions {
+  margin-left: $spacer-5;
+}

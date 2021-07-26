@@ -1,0 +1,24 @@
+@import '../../../design-system/typography';
+@import '../../../design-system/palette';
+
+$emptyIconSize: 64px;
+
+.emptyGrid {
+  text-align: center;
+}
+
+.emptyIcon {
+  width: $emptyIconSize;
+  height: $emptyIconSize;
+  color: $greenColor;
+}
+
+.title {
+  font-size: $largeFontSize;
+  font-weight: $boldFontWeight;
+}
+
+.subTitle {
+  font-size: $smallFontSize;
+  color: $greyColor;
+}

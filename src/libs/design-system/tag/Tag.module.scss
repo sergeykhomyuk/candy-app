@@ -1,0 +1,12 @@
+@import '../palette';
+@import '../typography';
+@import '../layout';
+
+.tag {
+  border-radius: $smallBorderRadius;
+  background-color: $lightGreyColor;
+  color: $greyColor;
+  font-size: $smallFontSize;
+  padding-left: $spacer-05;
+  padding-right: $spacer-05;
+}

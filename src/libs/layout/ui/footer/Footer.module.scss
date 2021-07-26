@@ -1,0 +1,42 @@
+@import '../../../design-system/palette';
+@import '../../../design-system/layout';
+
+$buttonLarge: 32px;
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: $whiteColor;
+  display: flex;
+  justify-content: space-between;
+  z-index: $raisedZIndex;
+  color: $greyColor;
+  padding: $spacer-3;
+  border-top: 1px solid $lightGreyColor;
+}
+
+.quickActions {
+  display: flex;
+  align-items: center;
+
+  > *:not(:last-child) {
+    margin-right: $spacer-5;
+  }
+}
+
+.notifications {
+  color: $accentColor;
+  display: flex;
+  align-items: center;
+}
+
+.addItem {
+  background-color: $accentColor;
+  color: $whiteColor;
+  width: $buttonLarge;
+  height: $buttonLarge;
+  border-radius: $smallBorderRadius;
+  border: none;
+}

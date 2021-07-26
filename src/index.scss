@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+@import './libs/design-system/typography/';
+
+body {
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Helvetica Neue', sans-serif;
+}
