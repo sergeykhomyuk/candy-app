@@ -4,9 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## How to run
 
-Run `yarn start` to start dev-server.
+Run `yarn install` to install node_modules.
 
-Run `yarn build` + `serve -s ./build` (or any other static server) to start production build.
+Run `yarn start` to start dev-server OR run `yarn build` + `serve -s ./build` (or any other static server) to start production build.
 
 ## Notes
 ### Architecture
